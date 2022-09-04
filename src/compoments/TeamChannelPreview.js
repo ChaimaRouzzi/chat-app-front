@@ -2,6 +2,7 @@ import React from "react";
 import { Avatar, useChatContext } from "stream-chat-react";
 const TeamChannelPreview = ({ channel, type }) => {
   const { channel: activeChannel, client } = useChatContext();
+  console.log(activeChannel);
   const ChannelPreview = () => {
     <p className="channel-preview__item">
       # {channel?.data.name || channel?.data.id}{" "}
